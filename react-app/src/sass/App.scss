@@ -3,6 +3,7 @@
 // primary
 $paleblue: hsl(225, 100%, 94%);
 $brightblue: hsl(245, 75%, 52%);
+$superlight: hsla(225, 100%, 94%, 0.33);
 
 // neutral
 $vpaleblue: hsl(225, 100%, 94%);
@@ -26,55 +27,69 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
-  background-color: lightblue;
+  background-color: $paleblue;
+  font: 100% $font;
 
   
   .card {
     // border: 5px solid red;
     border-radius: 40px;
-    max-width: 50%;
-    width: 70%;
-    margin: 25% 0;
+    // max-width: 50%;
+    width: 50%;
+    margin: 25% auto;
     text-align: center;
     background-color: white;
+    box-shadow: 0px 0px 100px  $desatblue;
 
     .hero {
       width: 100%;
       height: auto;
       overflow: hidden;
-      object-fit:contain;
+      // object-fit:contain;
       border-radius: 35px 35px 0 0;
     }
 
     h1 {
-      margin: 30px 0;
-      font-size: 2.5rem;
+      margin: 50px 0 10px 0;
+      font-size: 2.4rem;
+      font-weight: 700;
+      opacity: 1;
+      color: $darkblue;
     }
+
     #pitch {
-      width: 60%;
-      font-size: 1.8rem;
-      margin: 0 auto;
-      padding-bottom: 40px;
+      // min-width: 60%;
+      width: 70%;
+      opacity: .9;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: $desatblue;
+      line-height: 1.5;
+      // font-size: $pfontsize;
+      margin: 10px auto 40px auto;
+      // padding: 0 8%;
+      // padding-bottom: 40px;
     }
 
     .container {
       display: flex;
-      background-color: lightgrey;
+      background-color: $superlight;
       margin: 0 auto;
-      padding: 20px 8px;
+      padding: 30px 8px;
       border-radius: 18px;
       flex-direction: row;
-      width: 60%;
+      width: 82%;
       height: 70px;
       justify-content: space-around;
       align-items: center;
-      gap: 5%;
+      // gap: 5%;
 
       img {
         width: 80px;
       }
       .column {
         text-align: left;
+        margin-left: -10px;
         // justify-self:flex-start;
         // align-self: flex-start;
         h4 {
@@ -92,9 +107,10 @@ body {
       #change {
         width: 100px;
         height: 30px;
-        background-color: inherit;
-        color: purple;
+        background-color: hsla(225, 100%, 94%, 0); //transparent button background
+        color: $brightblue;
         font-size: 1.4em;
+        font-weight: 700;
         text-decoration: underline;
         border: none;
         // border-radius: 10px;
@@ -112,22 +128,26 @@ body {
       gap: 15px;
 
       button {
-        width:65%;
+        width:85%;
         height:70px;
-        font-size: 1.4em;
+        font-size: 1.3rem;
+        font-weight: 700;
         border-radius: 10px;
-        margin-bottom: 20px;
+        // margin-bottom: 20px;
+        // margin: 20px auto 0 auto;
       }
       button:first-child {
-        background-color: purple;
+        background-color: $brightblue;
         color: white;
         border: 0;
-        box-shadow: 0px 25px 50px 1px gray;
+        box-shadow: 0px 25px 25px 10px $paleblue;
+        margin-top: 20px;
       }
       button:last-child {
         background-color: inherit;
         border: none;
         color: gray;
+        margin: 10px auto 10px auto;
       }
     }
     
