@@ -1,2 +1,5 @@
-# frontendMentorIO
-A collection of my work on Frontend Mentor IO's mockups.
+# Order Summary Component
+This is my attempt for Frontend Mentor's Order [summary component](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj).
+
+## Usage
+```yarn && yarn start```
